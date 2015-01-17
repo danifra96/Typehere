@@ -1,0 +1,154 @@
+/* line 6, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 7, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body, html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+/* line 14, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar, html #sidebar {
+  width: 15%;
+  height: 100%;
+  display: inline-block;
+  background: url(/assets/button1.png) no-repeat right center;
+  background-size: 12.5%;
+  background-color: #eebd01;
+  float: left;
+  position: relative;
+  margin-left: -13%;
+  transition: all .6s;
+  padding: 1% 2%;
+}
+/* line 27, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar h2, html #sidebar h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+/* line 36, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar h3, html #sidebar h3 {
+  color: rgba(0, 0, 0, 0.8);
+}
+/* line 38, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar p, html #sidebar p {
+  font-size: 15px;
+  line-height: 130%;
+  color: #3d3c34;
+}
+/* line 44, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul, html #sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 47, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li, html #sidebar ul li {
+  display: inline-block;
+}
+/* line 49, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li a, html #sidebar ul li a {
+  width: 50px;
+  height: 50px;
+  background: red;
+  display: block;
+  text-indent: -9999px;
+  background: url(/assets/social.png) no-repeat center center;
+  background-size: cover;
+  transition: all .2s;
+}
+/* line 60, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .fb, html #sidebar ul li .fb {
+  background-color: #3b5998;
+  background-position: 0 0;
+}
+/* line 61, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .tw, html #sidebar ul li .tw {
+  background-color: #00aced;
+  background-position: 50% 0;
+}
+/* line 62, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .gp, html #sidebar ul li .gp {
+  background-color: #dd4b39;
+  background-position: 100% 0;
+}
+/* line 64, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .fb:hover, html #sidebar ul li .fb:hover {
+  background-color: #5872a7 !important;
+  background-size: 120%;
+}
+/* line 65, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .tw:hover, html #sidebar ul li .tw:hover {
+  background-color: #26b8f0 !important;
+}
+/* line 66, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #sidebar ul li .gp:hover, html #sidebar ul li .gp:hover {
+  background-color: #e26657 !important;
+}
+/* line 71, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body #main, html #main {
+  width: 98%;
+  height: 100%;
+  padding: 80px 40px 40px 40px;
+  border: 0;
+  font-size: 1.6em;
+  resize: none;
+  display: inline-block;
+  transition: all .6s;
+  /* background-color: #373737; */
+}
+/* line 83, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body textarea:focus, html textarea:focus {
+  outline-color: transparent !important;
+  outline-style: none !important;
+}
+/* line 88, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body .headtitle, html .headtitle {
+  position: absolute;
+  top: 0;
+  left: 1.9%;
+  margin: 0;
+  font-size: 70px;
+  font-family: 'Raleway', sans-serif;
+  color: #eebd01;
+  line-height: 70%;
+  transition: all .6s;
+}
+/* line 100, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body .bigside, html .bigside {
+  margin-left: 0 !important;
+  transition: all .6s;
+}
+/* line 104, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body .smallmain, html .smallmain {
+  width: 85% !important;
+  transition: all .6s;
+}
+/* line 109, C:/Users/Windows/Desktop/Typehere/project/app/assets/stylesheets/home.css.scss */
+body .movetitle, html .movetitle {
+  left: 14.9% !important;
+  transition: all 0.6s;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

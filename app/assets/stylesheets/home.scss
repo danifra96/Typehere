@@ -1,0 +1,167 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$title-font: 'Open Sans', sans-serif;
+$main-font: 'Raleway', sans-serif;
+* {box-sizing: border-box}
+body, html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	font-family: $main-font;
+
+	#sidebar {
+		width: 15%;
+		height: 100%;
+		display: inline-block;
+		background: asset_url('button1.png') no-repeat 99.4%  center;
+		background-size: 12.5%;
+		background-color: #eebd01;
+		float: left;
+		position: relative;
+		margin-left: -13%;
+		transition: all .6s;
+		padding: 1% 2%;
+		
+		img 
+		{
+			width: 60%;
+			margin: auto;
+			display: block;
+		}
+
+		h2 {
+			margin: 16px 0 20px 0;
+			font-size: 26px;
+			line-height: 1;
+			color: white;
+			text-align: center;
+			font-family: $title-font
+		}
+
+		h3 {color: rgba(0,0,0,.8); margin: 20px 0;}
+
+		p {	
+			font-size: 15px;
+			line-height: 130%;
+			color: #3D3C34;
+		}
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin-top: 30px;
+			li {
+				display: inline-block;
+				a {
+					width: 50px;
+					height: 50px;
+					background: red;
+					display: block;
+					text-indent: -9999px;
+					background: asset_url('social.png') no-repeat center center;
+					background-size: cover;
+					transition: all .2s;
+				}
+
+				.fb {background-color: #3b5998; background-position: 0 0}
+				.tw {background-color: #00aced; background-position: 50% 0}
+				.gp {background-color: #dd4b39; background-position: 100% 0}
+
+				.fb:hover {background-color: #5872a7 !important;}
+				.tw:hover {background-color: #44C2F2 !important;}
+				.gp:hover {background-color: #e26657 !important;}
+			}
+		}
+	}
+	
+	#cke_main {
+		border: 0;
+		box-shadow: 0;
+		border: 0;
+		width: 98%;
+		display: inline-block;
+		transition: all .6s;	
+
+		.cke_top {
+			position: absolute;
+			top: 0;
+			right: 0px;
+			background-color: #eebd01 !important;
+			background: none;
+			border: 0;
+			box-shadow: none;
+			padding: 12px 12px;
+
+			.cke_toolgroup, .cke_combo_button {
+				border: 0;
+				box-shadow: none;
+				background: white;
+				margin: 0;
+				border-radius: 0;
+			}
+
+			.cke_combo_button {margin: 0 10px 0 0 !important;}
+		}
+
+		.cke_bottom {
+			width: 0 !important;
+			visibility: hidden !important;
+			display: none !important;
+		}
+		.cke_inner {width: 100%;}
+	}
+	#cke_main, .cke_inner, .cke_contents{height: 100% !important;}
+
+	textarea:focus {
+		outline-color: transparent !important;
+		outline-style: none !important;
+	}
+
+	.headtitle {
+		position: absolute;
+		top: -0.01px;
+		left: 1.85%;
+		margin: 0;
+		font-size: 70px;
+		font-family: 'Raleway', sans-serif;
+		color: #eebd01;
+		line-height: 70%;
+		transition: all .6s;
+	}
+
+	.button {
+		width: 120px;
+		height: 50px;
+		display: block;
+		background-color: #ec0107;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		right: 250px;
+		text-align: center;
+		color: white;
+		transition: all .4s;
+
+		p {margin: 15.5px 0 0 0;}
+	}
+	/* Changers */
+	.active {
+		background-color: #58D201;
+		color: #252525;
+		transition: all .4s
+	} 
+	.bigside {
+		margin-left: 0 !important;
+		transition: all .6s;
+	}
+	.smallmain {
+		width: 85% !important; 
+		transition: all .6s;
+	}
+	.movetitle {
+		left: 14.85% !important;
+		transition: all .6s
+	}
+}
